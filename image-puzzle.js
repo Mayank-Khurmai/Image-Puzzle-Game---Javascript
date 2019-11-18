@@ -6,6 +6,7 @@ var imagePuzzle = {
     startGame: function (images, gridSize) {
         this.setImage(images, gridSize);
         helper.doc('playPanel').style.display = 'block';
+        helper.doc('imgTitle').innerHTML = image.title;
         helper.shuffle('sortable');
         this.stepCount = 0;
         this.startTime = new Date().getTime();
